@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<input id="nhapa">
+<input id="nhapb">
+<input id="nhapc">
+<button onclick="kt()">bấm</button>
+<h4 id="kq">hien thi</h4>
+<script>
+    function snn(a,b,c){
+        min = a;
+        if (b <=min){
+            min = b;
+        }if(c<=min){
+            min = c;
+        }
+        return min
+    }
+    function kt(){
+        let x = +document.getElementById("nhapa").value
+        let y = +document.getElementById("nhapb").value
+        let z = +document.getElementById("nhapc").value
+        kq.innerHTML = snn(x,y,z)
+    }
+</script>
+</body>
+</html>
